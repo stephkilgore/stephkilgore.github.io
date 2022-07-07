@@ -1,6 +1,8 @@
 .background img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 header {
     display: flex;
@@ -56,6 +58,28 @@ h2 {
     font-size: 16pt;
     line-height: 10px;
 }
+h3 {
+    font-family: 'Rubik', sans-serif;
+    color: #000002;
+    font-weight: 500;
+    font-size: 16pt;
+    line-height: 10px;
+}
+h4 {
+    font-family: 'Rubik', sans-serif;
+    color: #000002;
+    font-weight: 500;
+    font-size: 12pt;
+    line-height: 10px;
+}
+h5 {
+    font-family: 'Rubik', sans-serif;
+    text-decoration: underline;
+    color: #000002;
+    font-weight: 500;
+    font-size: 9pt;
+    line-height: 10px;
+}
 p {
     font-family: 'Rubik', sans-serif;
     color: #5d5d5d;
@@ -73,6 +97,61 @@ button {
     font-size: 12pt;
     font-weight: 500;
 }
+
+
+/* MY UX SKILLS SECTION CODED USING CSS FLEX */
+.mySkillsheader {
+    display: inline-block;
+    padding-left: 15%;
+    padding-top: 20px;
+    justify-content: left;
+    align-items: center;
+}
+.mySkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexContainer {
+    display: flex;
+    width: 70%;
+    padding-top: 0px;
+    margin: 10px;
+    flex-direction: row;
+}
+#row {
+    background-color: white;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+  }
+.flex_item {
+    padding: 10px;
+    margin: 10px;
+    width: 600px;
+    justify-content: center;
+    background-color: white;
+    color: white;
+ }
+
+
+/* MY WORK SECTION CODED USING CSS GRID */
+.myWorkheader {
+    display: inline-block;
+    padding-left: 15%;
+    padding-top: 50px;
+    justify-content: left;
+    align-items: center;
+}
+.workGrid {
+    display: grid;
+    margin: 0px 14%;
+    grid-template-rows: 120px 120px 120px 120px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+/* FOOTER AREA */
 .footer {
     background-color: none;
     display: flex;
@@ -104,3 +183,20 @@ button {
     font-style: bold;
     font-weight: 500;
     }
+
+/* MOBILE MEDIA QUERY FOR MOBILE RESPONSIVENESS */
+@media only screen and (max-width: 600) {
+    #flexContainer {
+        display: flex;
+        width: 100%;
+        padding-top: 0px;
+        margin: 10px;
+        flex-direction: column;
+    }
+    #workGrid {
+        display: grid;
+        margin: 0px 14%;
+        grid-template-rows: 120px 120px 120px 120px;
+        grid-template-columns: 1fr;
+    }
+}
