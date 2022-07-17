@@ -200,3 +200,16 @@ button {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+/*HOMEWORK 19*/
+.cssChange {
+    font-family: 'Rubik', sans-serif;
+    text-decoration: underline;
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: 500;
+    font-size: 9pt;
+    line-height: 10px;
+  }
