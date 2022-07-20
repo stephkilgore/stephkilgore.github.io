@@ -207,15 +207,17 @@ button {
 .cssChange {
     font-family: 'Rubik', sans-serif;
     text-decoration: underline;
-    color: #ffffff;
-    background-color: #000000;
+    color: #000002;
+    background-color: white;
+    max-width: fit-content;
+    padding: 4px;
     font-weight: 500;
     font-size: 9pt;
     line-height: 10px;
   }
 
   .hoverh5{
-    background-color:red;
-    color: blue;
+    background-color:#000002;
+    color: white;
     
   }
